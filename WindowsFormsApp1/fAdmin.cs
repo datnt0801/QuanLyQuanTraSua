@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -15,11 +9,32 @@ namespace WindowsFormsApp1
         public fAdmin()
         {
             InitializeComponent();
+            LoadAccountList();
         }
 
-        private void buttonViewBill_Click(object sender, EventArgs e)
+        void LoadAccountList()
         {
+            string connectionSTR = @"Data Source=DESKTOP-1L1IVTL\SQLEXPRESS\SQLEXPRESS;Initial Catalog=QuanLyQuanTraSua;Integrated Security=True";
 
+            SqlConnection connection = new SqlConnection(connectionSTR);
+
+            string query = "select DisplayName as [Tên hiển thị] from dbo.Account";
+
+            connection.Open();
+
+            SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+            DataTable dataTable = new DataTable();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
+
+            adapter.Fill(dataTable);
+
+            connection.Close();
+
+            dataGridViewAccount.DataSource = dataTable;
+
+            
         }
 
     }

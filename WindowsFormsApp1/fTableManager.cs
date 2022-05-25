@@ -25,18 +25,18 @@ namespace WindowsFormsApp1
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAccountProfile f = new fAccountProfile();
+            this.Hide();
             f.ShowDialog();
+            this.Show();
         }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
+            this.Hide();
             f.ShowDialog(); 
+            this.Show();
         }
 
-        private void fTableManager_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
