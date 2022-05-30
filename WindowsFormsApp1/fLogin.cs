@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.DAO;
 
 namespace WindowsFormsApp1
 {
@@ -17,12 +18,27 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        bool login(string username, string password)
+        {
+            return AccountDAO.Instance.Login(username, password);    
+        }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f =  new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+
+            string useName = textBoxUserName.Text;
+            string passWord = textBoxPassWord.Text;
+
+            if (login(useName, passWord))
+            {
+                fTableManager f = new fTableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
