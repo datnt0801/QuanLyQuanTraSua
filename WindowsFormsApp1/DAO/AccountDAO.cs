@@ -9,6 +9,8 @@ namespace WindowsFormsApp1.DAO
 {
     public class AccountDAO
     {
+        //single ton start
+
         private static AccountDAO instance;
 
         public static AccountDAO Instance
@@ -18,6 +20,12 @@ namespace WindowsFormsApp1.DAO
         }
 
         private AccountDAO() { }
+
+
+        //Single ton end
+
+
+
 
         public bool Login(string username, string password)
         {

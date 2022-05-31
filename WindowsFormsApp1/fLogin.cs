@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         bool login(string username, string password)
         {
-            return AccountDAO.Instance.Login(username, password);    
+            return AccountDAO.Instance.Login(username, password);  
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
