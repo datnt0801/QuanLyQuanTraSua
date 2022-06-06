@@ -24,9 +24,7 @@ namespace WindowsFormsApp1.DAO
 
         //Single ton end
 
-
-
-
+        
         public bool Login(string username, string password)
         {
             string query = "USP_Login @userName , @passWord";

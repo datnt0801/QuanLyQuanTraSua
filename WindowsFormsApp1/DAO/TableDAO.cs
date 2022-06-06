@@ -11,8 +11,8 @@ namespace QuanLyQuanTraSua.DAO
 {
     public class TableDAO
     {
-        private static TableDAO instance;
-
+        private static TableDAO instance;      
+        
         public static TableDAO Instance
         {
             get { if (instance == null) instance = new TableDAO(); return TableDAO.instance; }
@@ -34,7 +34,7 @@ namespace QuanLyQuanTraSua.DAO
             List<Table> tableList = new List<Table>();
 
             DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
-
+ 
             foreach (DataRow item in data.Rows)
             {
                 Table table = new Table(item);

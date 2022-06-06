@@ -40,6 +40,13 @@ namespace QuanLyQuanTraSua.DAO
             return -1;
         }
 
+
+        // Tạm dùng check out
+        public void Checkout(int id)
+        {
+            string query = "Update dbo.Bill set dateCheckOut = GETDATE() ,status = 1 where id = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
         public void CheckOut(int id, int discount, float totalPrice)
         {
             string query = "UPDATE dbo.Bill SET dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + ", totalPrice = " + totalPrice + " WHERE id = " + id;

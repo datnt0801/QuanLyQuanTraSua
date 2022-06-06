@@ -29,8 +29,8 @@ namespace QuanLyQuanTraSua.DTO
 
             this.Status = (int)row["status"];
 
-            if (row["discount"].ToString() != "")
-                this.Discount = (int)row["discount"];
+            //if (row["discount"].ToString() != "")
+            //    this.Discount = (int)row["discount"];
         }
 
         private int discount;
