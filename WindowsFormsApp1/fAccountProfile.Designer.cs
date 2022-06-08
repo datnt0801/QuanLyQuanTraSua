@@ -54,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.textBoxUserName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(24, 23);
@@ -84,6 +85,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.textDispalyName);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(24, 127);
@@ -113,6 +115,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.textBoxPassWord);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(24, 231);
@@ -143,6 +146,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.textBoxNewPassWord);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(24, 335);
@@ -172,6 +176,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel5.Controls.Add(this.textReEnterBoxNewPassWord);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(24, 438);
@@ -201,22 +206,24 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(489, 539);
+            this.buttonUpdate.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonUpdate.Location = new System.Drawing.Point(449, 539);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(115, 41);
+            this.buttonUpdate.Size = new System.Drawing.Size(128, 72);
             this.buttonUpdate.TabIndex = 4;
             this.buttonUpdate.Text = "Cập Nhật";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.UseVisualStyleBackColor = false;
             // 
             // buttonExit
             // 
+            this.buttonExit.BackColor = System.Drawing.Color.MistyRose;
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExit.Location = new System.Drawing.Point(638, 539);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(115, 41);
+            this.buttonExit.Size = new System.Drawing.Size(128, 72);
             this.buttonExit.TabIndex = 5;
             this.buttonExit.Text = "Thoát";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // fAccountProfile
@@ -224,6 +231,7 @@
             this.AcceptButton = this.buttonUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.CancelButton = this.buttonExit;
             this.ClientSize = new System.Drawing.Size(800, 865);
             this.Controls.Add(this.buttonExit);

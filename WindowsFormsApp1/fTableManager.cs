@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
                         btn.BackColor = Color.Aqua;
                         break;
                     case "Có người":
-                        btn.BackColor = Color.HotPink;
+                        btn.BackColor = Color.LightPink;
                         break;
                 }
 

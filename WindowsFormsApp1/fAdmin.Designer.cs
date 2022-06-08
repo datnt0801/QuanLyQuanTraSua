@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.tabControlAdmin = new System.Windows.Forms.TabControl();
-            this.tabPageBill = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridViewBill = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonViewBill = new System.Windows.Forms.Button();
-            this.dateTimePickerToDate = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerFromDate = new System.Windows.Forms.DateTimePicker();
             this.tabPageFood = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -50,30 +43,16 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBoxFoodID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.buttonSearchFood = new System.Windows.Forms.Button();
-            this.textBoxSearchFood = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridViewFood = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonShowFood = new System.Windows.Forms.Button();
             this.buttonEditFood = new System.Windows.Forms.Button();
             this.buttonDeleteFood = new System.Windows.Forms.Button();
             this.buttonAddFood = new System.Windows.Forms.Button();
-            this.tabPageFoodCategory = new System.Windows.Forms.TabPage();
-            this.dataGridViewCategory = new System.Windows.Forms.DataGridView();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.buttonShowCategory = new System.Windows.Forms.Button();
-            this.buttonEditCategory = new System.Windows.Forms.Button();
-            this.buttonDeleteCategory = new System.Windows.Forms.Button();
-            this.buttonAddCategory = new System.Windows.Forms.Button();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.textBoxCategoryID = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonSearchFood = new System.Windows.Forms.Button();
+            this.textBoxSearchFood = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridViewFood = new System.Windows.Forms.DataGridView();
             this.tabPageTable = new System.Windows.Forms.TabPage();
             this.dataGridTableFood = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -110,10 +89,6 @@
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tabControlAdmin.SuspendLayout();
-            this.tabPageBill.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
-            this.panel1.SuspendLayout();
             this.tabPageFood.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -121,16 +96,10 @@
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFood)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.tabPageFoodCategory.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
-            this.panel12.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.tabPageTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTableFood)).BeginInit();
             this.panel11.SuspendLayout();
@@ -149,9 +118,7 @@
             // 
             // tabControlAdmin
             // 
-            this.tabControlAdmin.Controls.Add(this.tabPageBill);
             this.tabControlAdmin.Controls.Add(this.tabPageFood);
-            this.tabControlAdmin.Controls.Add(this.tabPageFoodCategory);
             this.tabControlAdmin.Controls.Add(this.tabPageTable);
             this.tabControlAdmin.Controls.Add(this.tabPageAccount);
             this.tabControlAdmin.Location = new System.Drawing.Point(6, 1);
@@ -161,82 +128,13 @@
             this.tabControlAdmin.Size = new System.Drawing.Size(774, 515);
             this.tabControlAdmin.TabIndex = 0;
             // 
-            // tabPageBill
-            // 
-            this.tabPageBill.Controls.Add(this.panel2);
-            this.tabPageBill.Controls.Add(this.panel1);
-            this.tabPageBill.Location = new System.Drawing.Point(4, 22);
-            this.tabPageBill.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPageBill.Name = "tabPageBill";
-            this.tabPageBill.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageBill.Size = new System.Drawing.Size(766, 489);
-            this.tabPageBill.TabIndex = 0;
-            this.tabPageBill.Text = "Doanh Thu";
-            this.tabPageBill.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridViewBill);
-            this.panel2.Location = new System.Drawing.Point(3, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 457);
-            this.panel2.TabIndex = 1;
-            // 
-            // dataGridViewBill
-            // 
-            this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBill.Location = new System.Drawing.Point(2, 2);
-            this.dataGridViewBill.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewBill.Name = "dataGridViewBill";
-            this.dataGridViewBill.RowHeadersWidth = 82;
-            this.dataGridViewBill.RowTemplate.Height = 33;
-            this.dataGridViewBill.Size = new System.Drawing.Size(758, 428);
-            this.dataGridViewBill.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.buttonViewBill);
-            this.panel1.Controls.Add(this.dateTimePickerToDate);
-            this.panel1.Controls.Add(this.dateTimePickerFromDate);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 24);
-            this.panel1.TabIndex = 0;
-            // 
-            // buttonViewBill
-            // 
-            this.buttonViewBill.Location = new System.Drawing.Point(344, 2);
-            this.buttonViewBill.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonViewBill.Name = "buttonViewBill";
-            this.buttonViewBill.Size = new System.Drawing.Size(82, 21);
-            this.buttonViewBill.TabIndex = 3;
-            this.buttonViewBill.Text = "Thống Kê";
-            this.buttonViewBill.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePickerToDate
-            // 
-            this.dateTimePickerToDate.Location = new System.Drawing.Point(561, 2);
-            this.dateTimePickerToDate.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePickerToDate.Name = "dateTimePickerToDate";
-            this.dateTimePickerToDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerToDate.TabIndex = 1;
-            // 
-            // dateTimePickerFromDate
-            // 
-            this.dateTimePickerFromDate.Location = new System.Drawing.Point(2, 2);
-            this.dateTimePickerFromDate.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePickerFromDate.Name = "dateTimePickerFromDate";
-            this.dateTimePickerFromDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerFromDate.TabIndex = 0;
-            // 
             // tabPageFood
             // 
+            this.tabPageFood.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabPageFood.Controls.Add(this.panel6);
+            this.tabPageFood.Controls.Add(this.panel3);
             this.tabPageFood.Controls.Add(this.panel5);
             this.tabPageFood.Controls.Add(this.panel4);
-            this.tabPageFood.Controls.Add(this.panel3);
             this.tabPageFood.Location = new System.Drawing.Point(4, 22);
             this.tabPageFood.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageFood.Name = "tabPageFood";
@@ -244,26 +142,27 @@
             this.tabPageFood.Size = new System.Drawing.Size(766, 489);
             this.tabPageFood.TabIndex = 1;
             this.tabPageFood.Text = "Thức Ăn";
-            this.tabPageFood.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(430, 69);
+            this.panel6.Location = new System.Drawing.Point(431, 80);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(334, 420);
+            this.panel6.Size = new System.Drawing.Size(334, 274);
             this.panel6.TabIndex = 2;
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel10.Controls.Add(this.numericUpDownFoodPrice);
             this.panel10.Controls.Add(this.label4);
-            this.panel10.Location = new System.Drawing.Point(3, 165);
+            this.panel10.Location = new System.Drawing.Point(2, 201);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(328, 48);
             this.panel10.TabIndex = 6;
@@ -293,9 +192,10 @@
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel9.Controls.Add(this.comboBoxFoodCategory);
             this.panel9.Controls.Add(this.label3);
-            this.panel9.Location = new System.Drawing.Point(3, 111);
+            this.panel9.Location = new System.Drawing.Point(0, 141);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(328, 48);
             this.panel9.TabIndex = 4;
@@ -321,9 +221,10 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel8.Controls.Add(this.textBoxFoodName);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Location = new System.Drawing.Point(4, 57);
+            this.panel8.Location = new System.Drawing.Point(0, 80);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(328, 48);
             this.panel8.TabIndex = 3;
@@ -348,9 +249,10 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel7.Controls.Add(this.textBoxFoodID);
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Location = new System.Drawing.Point(0, 16);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(328, 48);
             this.panel7.TabIndex = 2;
@@ -373,8 +275,67 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.buttonShowFood);
+            this.panel3.Controls.Add(this.buttonEditFood);
+            this.panel3.Controls.Add(this.buttonDeleteFood);
+            this.panel3.Controls.Add(this.buttonAddFood);
+            this.panel3.Location = new System.Drawing.Point(431, 369);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(333, 63);
+            this.panel3.TabIndex = 0;
+            // 
+            // buttonShowFood
+            // 
+            this.buttonShowFood.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonShowFood.Location = new System.Drawing.Point(268, 0);
+            this.buttonShowFood.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonShowFood.Name = "buttonShowFood";
+            this.buttonShowFood.Size = new System.Drawing.Size(60, 61);
+            this.buttonShowFood.TabIndex = 3;
+            this.buttonShowFood.Text = "Xem";
+            this.buttonShowFood.UseVisualStyleBackColor = false;
+            // 
+            // buttonEditFood
+            // 
+            this.buttonEditFood.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonEditFood.Location = new System.Drawing.Point(180, 1);
+            this.buttonEditFood.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditFood.Name = "buttonEditFood";
+            this.buttonEditFood.Size = new System.Drawing.Size(65, 61);
+            this.buttonEditFood.TabIndex = 2;
+            this.buttonEditFood.Text = "Sửa";
+            this.buttonEditFood.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteFood
+            // 
+            this.buttonDeleteFood.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonDeleteFood.Location = new System.Drawing.Point(92, 0);
+            this.buttonDeleteFood.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDeleteFood.Name = "buttonDeleteFood";
+            this.buttonDeleteFood.Size = new System.Drawing.Size(64, 61);
+            this.buttonDeleteFood.TabIndex = 1;
+            this.buttonDeleteFood.Text = "Xóa";
+            this.buttonDeleteFood.UseVisualStyleBackColor = false;
+            // 
+            // buttonAddFood
+            // 
+            this.buttonAddFood.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonAddFood.Location = new System.Drawing.Point(10, 0);
+            this.buttonAddFood.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddFood.Name = "buttonAddFood";
+            this.buttonAddFood.Size = new System.Drawing.Size(62, 61);
+            this.buttonAddFood.TabIndex = 0;
+            this.buttonAddFood.Text = "Thêm";
+            this.buttonAddFood.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.buttonSearchFood);
             this.panel5.Controls.Add(this.textBoxSearchFood);
@@ -386,13 +347,14 @@
             // 
             // buttonSearchFood
             // 
+            this.buttonSearchFood.BackColor = System.Drawing.Color.MistyRose;
             this.buttonSearchFood.Location = new System.Drawing.Point(252, 0);
             this.buttonSearchFood.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSearchFood.Name = "buttonSearchFood";
             this.buttonSearchFood.Size = new System.Drawing.Size(78, 61);
             this.buttonSearchFood.TabIndex = 4;
             this.buttonSearchFood.Text = "Tìm";
-            this.buttonSearchFood.UseVisualStyleBackColor = true;
+            this.buttonSearchFood.UseVisualStyleBackColor = false;
             // 
             // textBoxSearchFood
             // 
@@ -405,222 +367,30 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.dataGridViewFood);
-            this.panel4.Location = new System.Drawing.Point(3, 69);
+            this.panel4.Location = new System.Drawing.Point(3, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(424, 419);
+            this.panel4.Size = new System.Drawing.Size(424, 438);
             this.panel4.TabIndex = 1;
             // 
             // dataGridViewFood
             // 
+            this.dataGridViewFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewFood.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFood.Location = new System.Drawing.Point(2, 2);
+            this.dataGridViewFood.Location = new System.Drawing.Point(-3, 4);
             this.dataGridViewFood.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewFood.Name = "dataGridViewFood";
+            this.dataGridViewFood.RowHeadersVisible = false;
             this.dataGridViewFood.RowHeadersWidth = 82;
             this.dataGridViewFood.RowTemplate.Height = 33;
-            this.dataGridViewFood.Size = new System.Drawing.Size(423, 416);
+            this.dataGridViewFood.Size = new System.Drawing.Size(423, 427);
             this.dataGridViewFood.TabIndex = 0;
             this.dataGridViewFood.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFood_CellContentClick);
             // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.buttonShowFood);
-            this.panel3.Controls.Add(this.buttonEditFood);
-            this.panel3.Controls.Add(this.buttonDeleteFood);
-            this.panel3.Controls.Add(this.buttonAddFood);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(426, 63);
-            this.panel3.TabIndex = 0;
-            // 
-            // buttonShowFood
-            // 
-            this.buttonShowFood.Location = new System.Drawing.Point(344, 0);
-            this.buttonShowFood.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonShowFood.Name = "buttonShowFood";
-            this.buttonShowFood.Size = new System.Drawing.Size(78, 61);
-            this.buttonShowFood.TabIndex = 3;
-            this.buttonShowFood.Text = "Xem";
-            this.buttonShowFood.UseVisualStyleBackColor = true;
-            // 
-            // buttonEditFood
-            // 
-            this.buttonEditFood.Location = new System.Drawing.Point(232, 0);
-            this.buttonEditFood.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonEditFood.Name = "buttonEditFood";
-            this.buttonEditFood.Size = new System.Drawing.Size(78, 61);
-            this.buttonEditFood.TabIndex = 2;
-            this.buttonEditFood.Text = "Sửa";
-            this.buttonEditFood.UseVisualStyleBackColor = true;
-            // 
-            // buttonDeleteFood
-            // 
-            this.buttonDeleteFood.Location = new System.Drawing.Point(117, 2);
-            this.buttonDeleteFood.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonDeleteFood.Name = "buttonDeleteFood";
-            this.buttonDeleteFood.Size = new System.Drawing.Size(78, 61);
-            this.buttonDeleteFood.TabIndex = 1;
-            this.buttonDeleteFood.Text = "Xóa";
-            this.buttonDeleteFood.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddFood
-            // 
-            this.buttonAddFood.Location = new System.Drawing.Point(0, 0);
-            this.buttonAddFood.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonAddFood.Name = "buttonAddFood";
-            this.buttonAddFood.Size = new System.Drawing.Size(78, 61);
-            this.buttonAddFood.TabIndex = 0;
-            this.buttonAddFood.Text = "Thêm";
-            this.buttonAddFood.UseVisualStyleBackColor = true;
-            // 
-            // tabPageFoodCategory
-            // 
-            this.tabPageFoodCategory.Controls.Add(this.dataGridViewCategory);
-            this.tabPageFoodCategory.Controls.Add(this.panel12);
-            this.tabPageFoodCategory.Controls.Add(this.panel15);
-            this.tabPageFoodCategory.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFoodCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPageFoodCategory.Name = "tabPageFoodCategory";
-            this.tabPageFoodCategory.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageFoodCategory.Size = new System.Drawing.Size(766, 489);
-            this.tabPageFoodCategory.TabIndex = 2;
-            this.tabPageFoodCategory.Text = "Danh mục";
-            this.tabPageFoodCategory.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewCategory
-            // 
-            this.dataGridViewCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategory.Location = new System.Drawing.Point(4, 69);
-            this.dataGridViewCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewCategory.Name = "dataGridViewCategory";
-            this.dataGridViewCategory.RowHeadersWidth = 82;
-            this.dataGridViewCategory.RowTemplate.Height = 33;
-            this.dataGridViewCategory.Size = new System.Drawing.Size(423, 416);
-            this.dataGridViewCategory.TabIndex = 3;
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.buttonShowCategory);
-            this.panel12.Controls.Add(this.buttonEditCategory);
-            this.panel12.Controls.Add(this.buttonDeleteCategory);
-            this.panel12.Controls.Add(this.buttonAddCategory);
-            this.panel12.Location = new System.Drawing.Point(4, 4);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(426, 63);
-            this.panel12.TabIndex = 4;
-            // 
-            // buttonShowCategory
-            // 
-            this.buttonShowCategory.Location = new System.Drawing.Point(344, 0);
-            this.buttonShowCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonShowCategory.Name = "buttonShowCategory";
-            this.buttonShowCategory.Size = new System.Drawing.Size(78, 61);
-            this.buttonShowCategory.TabIndex = 3;
-            this.buttonShowCategory.Text = "Xem";
-            this.buttonShowCategory.UseVisualStyleBackColor = true;
-            // 
-            // buttonEditCategory
-            // 
-            this.buttonEditCategory.Location = new System.Drawing.Point(232, 0);
-            this.buttonEditCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonEditCategory.Name = "buttonEditCategory";
-            this.buttonEditCategory.Size = new System.Drawing.Size(78, 61);
-            this.buttonEditCategory.TabIndex = 2;
-            this.buttonEditCategory.Text = "Sửa";
-            this.buttonEditCategory.UseVisualStyleBackColor = true;
-            // 
-            // buttonDeleteCategory
-            // 
-            this.buttonDeleteCategory.Location = new System.Drawing.Point(117, 2);
-            this.buttonDeleteCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonDeleteCategory.Name = "buttonDeleteCategory";
-            this.buttonDeleteCategory.Size = new System.Drawing.Size(78, 61);
-            this.buttonDeleteCategory.TabIndex = 1;
-            this.buttonDeleteCategory.Text = "Xóa";
-            this.buttonDeleteCategory.UseVisualStyleBackColor = true;
-            // 
-            // buttonAddCategory
-            // 
-            this.buttonAddCategory.Location = new System.Drawing.Point(0, 0);
-            this.buttonAddCategory.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonAddCategory.Name = "buttonAddCategory";
-            this.buttonAddCategory.Size = new System.Drawing.Size(78, 61);
-            this.buttonAddCategory.TabIndex = 0;
-            this.buttonAddCategory.Text = "Thêm";
-            this.buttonAddCategory.UseVisualStyleBackColor = true;
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.panel17);
-            this.panel15.Controls.Add(this.panel14);
-            this.panel15.Location = new System.Drawing.Point(432, 70);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(334, 420);
-            this.panel15.TabIndex = 6;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.textBox3);
-            this.panel17.Controls.Add(this.label8);
-            this.panel17.Location = new System.Drawing.Point(4, 57);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(328, 48);
-            this.panel17.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(139, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(188, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Tên Danh Mục:";
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.textBoxCategoryID);
-            this.panel14.Controls.Add(this.label6);
-            this.panel14.Location = new System.Drawing.Point(3, 3);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(328, 48);
-            this.panel14.TabIndex = 2;
-            // 
-            // textBoxCategoryID
-            // 
-            this.textBoxCategoryID.Location = new System.Drawing.Point(139, 14);
-            this.textBoxCategoryID.Name = "textBoxCategoryID";
-            this.textBoxCategoryID.ReadOnly = true;
-            this.textBoxCategoryID.Size = new System.Drawing.Size(188, 20);
-            this.textBoxCategoryID.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 19);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "ID:";
-            // 
             // tabPageTable
             // 
+            this.tabPageTable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabPageTable.Controls.Add(this.dataGridTableFood);
             this.tabPageTable.Controls.Add(this.panel11);
             this.tabPageTable.Controls.Add(this.panel13);
@@ -630,89 +400,96 @@
             this.tabPageTable.Size = new System.Drawing.Size(766, 489);
             this.tabPageTable.TabIndex = 3;
             this.tabPageTable.Text = "Bàn Ăn";
-            this.tabPageTable.UseVisualStyleBackColor = true;
             // 
             // dataGridTableFood
             // 
             this.dataGridTableFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridTableFood.Location = new System.Drawing.Point(4, 68);
+            this.dataGridTableFood.Location = new System.Drawing.Point(0, 31);
             this.dataGridTableFood.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridTableFood.Name = "dataGridTableFood";
+            this.dataGridTableFood.RowHeadersVisible = false;
             this.dataGridTableFood.RowHeadersWidth = 82;
             this.dataGridTableFood.RowTemplate.Height = 33;
-            this.dataGridTableFood.Size = new System.Drawing.Size(423, 416);
+            this.dataGridTableFood.Size = new System.Drawing.Size(423, 381);
             this.dataGridTableFood.TabIndex = 7;
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.buttonShowTable);
             this.panel11.Controls.Add(this.buttonEditTable);
             this.panel11.Controls.Add(this.buttonDeleteTable);
             this.panel11.Controls.Add(this.buttonAddTable);
-            this.panel11.Location = new System.Drawing.Point(3, 3);
+            this.panel11.Location = new System.Drawing.Point(431, 350);
             this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(426, 63);
+            this.panel11.Size = new System.Drawing.Size(334, 63);
             this.panel11.TabIndex = 8;
             // 
             // buttonShowTable
             // 
-            this.buttonShowTable.Location = new System.Drawing.Point(344, 0);
+            this.buttonShowTable.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonShowTable.Location = new System.Drawing.Point(268, 0);
             this.buttonShowTable.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShowTable.Name = "buttonShowTable";
-            this.buttonShowTable.Size = new System.Drawing.Size(78, 61);
+            this.buttonShowTable.Size = new System.Drawing.Size(66, 61);
             this.buttonShowTable.TabIndex = 3;
             this.buttonShowTable.Text = "Xem";
-            this.buttonShowTable.UseVisualStyleBackColor = true;
+            this.buttonShowTable.UseVisualStyleBackColor = false;
             // 
             // buttonEditTable
             // 
-            this.buttonEditTable.Location = new System.Drawing.Point(232, 0);
+            this.buttonEditTable.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonEditTable.Location = new System.Drawing.Point(180, -1);
             this.buttonEditTable.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditTable.Name = "buttonEditTable";
-            this.buttonEditTable.Size = new System.Drawing.Size(78, 61);
+            this.buttonEditTable.Size = new System.Drawing.Size(65, 61);
             this.buttonEditTable.TabIndex = 2;
             this.buttonEditTable.Text = "Sửa";
-            this.buttonEditTable.UseVisualStyleBackColor = true;
+            this.buttonEditTable.UseVisualStyleBackColor = false;
             // 
             // buttonDeleteTable
             // 
-            this.buttonDeleteTable.Location = new System.Drawing.Point(117, 2);
+            this.buttonDeleteTable.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonDeleteTable.Location = new System.Drawing.Point(92, 0);
             this.buttonDeleteTable.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDeleteTable.Name = "buttonDeleteTable";
-            this.buttonDeleteTable.Size = new System.Drawing.Size(78, 61);
+            this.buttonDeleteTable.Size = new System.Drawing.Size(60, 61);
             this.buttonDeleteTable.TabIndex = 1;
             this.buttonDeleteTable.Text = "Xóa";
-            this.buttonDeleteTable.UseVisualStyleBackColor = true;
+            this.buttonDeleteTable.UseVisualStyleBackColor = false;
             // 
             // buttonAddTable
             // 
+            this.buttonAddTable.BackColor = System.Drawing.Color.MistyRose;
             this.buttonAddTable.Location = new System.Drawing.Point(0, 0);
             this.buttonAddTable.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAddTable.Name = "buttonAddTable";
-            this.buttonAddTable.Size = new System.Drawing.Size(78, 61);
+            this.buttonAddTable.Size = new System.Drawing.Size(66, 61);
             this.buttonAddTable.TabIndex = 0;
             this.buttonAddTable.Text = "Thêm";
-            this.buttonAddTable.UseVisualStyleBackColor = true;
+            this.buttonAddTable.UseVisualStyleBackColor = false;
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.panel19);
             this.panel13.Controls.Add(this.panel16);
             this.panel13.Controls.Add(this.panel18);
-            this.panel13.Location = new System.Drawing.Point(430, 69);
+            this.panel13.Location = new System.Drawing.Point(431, 31);
             this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(334, 420);
+            this.panel13.Size = new System.Drawing.Size(334, 245);
             this.panel13.TabIndex = 9;
             // 
             // panel19
             // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel19.Controls.Add(this.comboBoxTableStautus);
             this.panel19.Controls.Add(this.label9);
-            this.panel19.Location = new System.Drawing.Point(4, 111);
+            this.panel19.Location = new System.Drawing.Point(3, 163);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(328, 48);
             this.panel19.TabIndex = 4;
@@ -738,9 +515,10 @@
             // 
             // panel16
             // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel16.Controls.Add(this.textBoxTableName);
             this.panel16.Controls.Add(this.label5);
-            this.panel16.Location = new System.Drawing.Point(4, 57);
+            this.panel16.Location = new System.Drawing.Point(3, 93);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(328, 48);
             this.panel16.TabIndex = 3;
@@ -765,9 +543,10 @@
             // 
             // panel18
             // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel18.Controls.Add(this.textBox2);
             this.panel18.Controls.Add(this.label7);
-            this.panel18.Location = new System.Drawing.Point(3, 3);
+            this.panel18.Location = new System.Drawing.Point(3, 17);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(328, 48);
             this.panel18.TabIndex = 2;
@@ -792,6 +571,7 @@
             // 
             // tabPageAccount
             // 
+            this.tabPageAccount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabPageAccount.Controls.Add(this.dataGridViewAccount);
             this.tabPageAccount.Controls.Add(this.panel20);
             this.tabPageAccount.Controls.Add(this.panel21);
@@ -801,14 +581,14 @@
             this.tabPageAccount.Size = new System.Drawing.Size(766, 489);
             this.tabPageAccount.TabIndex = 4;
             this.tabPageAccount.Text = "Tài Khoản";
-            this.tabPageAccount.UseVisualStyleBackColor = true;
             // 
             // dataGridViewAccount
             // 
             this.dataGridViewAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAccount.Location = new System.Drawing.Point(4, 68);
+            this.dataGridViewAccount.Location = new System.Drawing.Point(5, 33);
             this.dataGridViewAccount.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewAccount.Name = "dataGridViewAccount";
+            this.dataGridViewAccount.RowHeadersVisible = false;
             this.dataGridViewAccount.RowHeadersWidth = 82;
             this.dataGridViewAccount.RowTemplate.Height = 33;
             this.dataGridViewAccount.Size = new System.Drawing.Size(423, 416);
@@ -816,85 +596,93 @@
             // 
             // panel20
             // 
+            this.panel20.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.buttonShowAccount);
             this.panel20.Controls.Add(this.buttonEditAccount);
             this.panel20.Controls.Add(this.buttonDeleteAccount);
             this.panel20.Controls.Add(this.buttonAddAccount);
-            this.panel20.Location = new System.Drawing.Point(3, 3);
+            this.panel20.Location = new System.Drawing.Point(432, 387);
             this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(426, 63);
+            this.panel20.Size = new System.Drawing.Size(346, 63);
             this.panel20.TabIndex = 11;
             // 
             // buttonShowAccount
             // 
-            this.buttonShowAccount.Location = new System.Drawing.Point(344, 0);
+            this.buttonShowAccount.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonShowAccount.Location = new System.Drawing.Point(267, 2);
             this.buttonShowAccount.Margin = new System.Windows.Forms.Padding(2);
             this.buttonShowAccount.Name = "buttonShowAccount";
-            this.buttonShowAccount.Size = new System.Drawing.Size(78, 61);
+            this.buttonShowAccount.Size = new System.Drawing.Size(63, 61);
             this.buttonShowAccount.TabIndex = 3;
             this.buttonShowAccount.Text = "Xem";
-            this.buttonShowAccount.UseVisualStyleBackColor = true;
+            this.buttonShowAccount.UseVisualStyleBackColor = false;
             // 
             // buttonEditAccount
             // 
-            this.buttonEditAccount.Location = new System.Drawing.Point(232, 0);
+            this.buttonEditAccount.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonEditAccount.Location = new System.Drawing.Point(182, 1);
             this.buttonEditAccount.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditAccount.Name = "buttonEditAccount";
-            this.buttonEditAccount.Size = new System.Drawing.Size(78, 61);
+            this.buttonEditAccount.Size = new System.Drawing.Size(58, 61);
             this.buttonEditAccount.TabIndex = 2;
             this.buttonEditAccount.Text = "Sửa";
-            this.buttonEditAccount.UseVisualStyleBackColor = true;
+            this.buttonEditAccount.UseVisualStyleBackColor = false;
             // 
             // buttonDeleteAccount
             // 
-            this.buttonDeleteAccount.Location = new System.Drawing.Point(117, 2);
+            this.buttonDeleteAccount.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonDeleteAccount.Location = new System.Drawing.Point(90, 0);
             this.buttonDeleteAccount.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDeleteAccount.Name = "buttonDeleteAccount";
-            this.buttonDeleteAccount.Size = new System.Drawing.Size(78, 61);
+            this.buttonDeleteAccount.Size = new System.Drawing.Size(60, 61);
             this.buttonDeleteAccount.TabIndex = 1;
             this.buttonDeleteAccount.Text = "Xóa";
-            this.buttonDeleteAccount.UseVisualStyleBackColor = true;
+            this.buttonDeleteAccount.UseVisualStyleBackColor = false;
             // 
             // buttonAddAccount
             // 
+            this.buttonAddAccount.BackColor = System.Drawing.Color.MistyRose;
             this.buttonAddAccount.Location = new System.Drawing.Point(0, 0);
             this.buttonAddAccount.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAddAccount.Name = "buttonAddAccount";
-            this.buttonAddAccount.Size = new System.Drawing.Size(78, 61);
+            this.buttonAddAccount.Size = new System.Drawing.Size(62, 61);
             this.buttonAddAccount.TabIndex = 0;
             this.buttonAddAccount.Text = "Thêm";
-            this.buttonAddAccount.UseVisualStyleBackColor = true;
+            this.buttonAddAccount.UseVisualStyleBackColor = false;
             // 
             // panel21
             // 
+            this.panel21.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.buttonResetPassword);
             this.panel21.Controls.Add(this.panel22);
             this.panel21.Controls.Add(this.panel23);
             this.panel21.Controls.Add(this.panel24);
-            this.panel21.Location = new System.Drawing.Point(430, 69);
+            this.panel21.Location = new System.Drawing.Point(431, 34);
             this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(334, 420);
+            this.panel21.Size = new System.Drawing.Size(334, 316);
             this.panel21.TabIndex = 12;
             // 
             // buttonResetPassword
             // 
-            this.buttonResetPassword.Location = new System.Drawing.Point(250, 164);
+            this.buttonResetPassword.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonResetPassword.Location = new System.Drawing.Point(250, 246);
             this.buttonResetPassword.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResetPassword.Name = "buttonResetPassword";
             this.buttonResetPassword.Size = new System.Drawing.Size(78, 61);
             this.buttonResetPassword.TabIndex = 4;
             this.buttonResetPassword.Text = "Đặt lại mật khẩu";
-            this.buttonResetPassword.UseVisualStyleBackColor = true;
+            this.buttonResetPassword.UseVisualStyleBackColor = false;
             // 
             // panel22
             // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel22.Controls.Add(this.comboBoxAccountType);
             this.panel22.Controls.Add(this.label10);
-            this.panel22.Location = new System.Drawing.Point(4, 111);
+            this.panel22.Location = new System.Drawing.Point(2, 184);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(328, 48);
             this.panel22.TabIndex = 4;
@@ -920,9 +708,10 @@
             // 
             // panel23
             // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel23.Controls.Add(this.textBoxDisplayName);
             this.panel23.Controls.Add(this.label11);
-            this.panel23.Location = new System.Drawing.Point(4, 57);
+            this.panel23.Location = new System.Drawing.Point(1, 112);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(328, 48);
             this.panel23.TabIndex = 3;
@@ -947,9 +736,10 @@
             // 
             // panel24
             // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel24.Controls.Add(this.textBoxUserName);
             this.panel24.Controls.Add(this.label12);
-            this.panel24.Location = new System.Drawing.Point(3, 3);
+            this.panel24.Location = new System.Drawing.Point(1, 38);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(328, 48);
             this.panel24.TabIndex = 2;
@@ -984,10 +774,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fAdmin";
             this.tabControlAdmin.ResumeLayout(false);
-            this.tabPageBill.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.tabPageFood.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -999,19 +785,11 @@
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFood)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.tabPageFoodCategory.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.tabPageTable.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTableFood)).EndInit();
             this.panel11.ResumeLayout(false);
@@ -1039,17 +817,9 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControlAdmin;
-        private System.Windows.Forms.TabPage tabPageBill;
         private System.Windows.Forms.TabPage tabPageFood;
-        private System.Windows.Forms.TabPage tabPageFoodCategory;
         private System.Windows.Forms.TabPage tabPageTable;
         private System.Windows.Forms.TabPage tabPageAccount;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridViewBill;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buttonViewBill;
-        private System.Windows.Forms.DateTimePicker dateTimePickerToDate;
-        private System.Windows.Forms.DateTimePicker dateTimePickerFromDate;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button buttonSearchFood;
@@ -1073,19 +843,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.NumericUpDown numericUpDownFoodPrice;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridViewCategory;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button buttonShowCategory;
-        private System.Windows.Forms.Button buttonEditCategory;
-        private System.Windows.Forms.Button buttonDeleteCategory;
-        private System.Windows.Forms.Button buttonAddCategory;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBoxCategoryID;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridTableFood;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button buttonShowTable;

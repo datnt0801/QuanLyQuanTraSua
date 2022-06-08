@@ -48,5 +48,7 @@ namespace WindowsFormsApp1
             comboBoxFoodCategory.Items.Add(dataGridViewFood.CurrentRow.Cells[2].Value.ToString());
             numericUpDownFoodPrice.Value.Equals(dataGridViewFood.CurrentRow.Cells[3]);
         }
+
+
     }
 }
