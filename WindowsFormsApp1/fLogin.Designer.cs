@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -48,20 +49,18 @@
             this.panel1.Controls.Add(this.buttonLogin);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(15, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
+            this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 272);
+            this.panel1.Size = new System.Drawing.Size(341, 141);
             this.panel1.TabIndex = 0;
             // 
             // buttonExit
             // 
             this.buttonExit.BackColor = System.Drawing.Color.MistyRose;
             this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonExit.Location = new System.Drawing.Point(506, 212);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonExit.Location = new System.Drawing.Point(253, 110);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(150, 44);
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
             this.buttonExit.TabIndex = 4;
             this.buttonExit.Text = "Thoát";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -70,10 +69,9 @@
             // buttonLogin
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.MistyRose;
-            this.buttonLogin.Location = new System.Drawing.Point(308, 213);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonLogin.Location = new System.Drawing.Point(154, 111);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(150, 44);
+            this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Đăng nhập";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -84,18 +82,16 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.textBoxPassWord);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(6, 110);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6);
+            this.panel3.Location = new System.Drawing.Point(3, 57);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(676, 92);
+            this.panel3.Size = new System.Drawing.Size(338, 48);
             this.panel3.TabIndex = 2;
             // 
             // textBoxPassWord
             // 
-            this.textBoxPassWord.Location = new System.Drawing.Point(278, 21);
-            this.textBoxPassWord.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxPassWord.Location = new System.Drawing.Point(139, 11);
             this.textBoxPassWord.Name = "textBoxPassWord";
-            this.textBoxPassWord.Size = new System.Drawing.Size(344, 31);
+            this.textBoxPassWord.Size = new System.Drawing.Size(174, 20);
             this.textBoxPassWord.TabIndex = 2;
             this.textBoxPassWord.UseSystemPasswordChar = true;
             // 
@@ -103,10 +99,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(3, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 37);
+            this.label2.Size = new System.Drawing.Size(84, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -115,43 +110,42 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.textBoxUserName);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(6, 6);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(676, 92);
+            this.panel2.Size = new System.Drawing.Size(338, 48);
             this.panel2.TabIndex = 0;
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(278, 27);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxUserName.Location = new System.Drawing.Point(139, 14);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(344, 31);
+            this.textBoxUserName.Size = new System.Drawing.Size(174, 20);
             this.textBoxUserName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(3, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 37);
+            this.label1.Size = new System.Drawing.Size(130, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
             // 
             // fLogin
             // 
             this.AcceptButton = this.buttonLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CancelButton = this.buttonExit;
-            this.ClientSize = new System.Drawing.Size(712, 302);
+            this.ClientSize = new System.Drawing.Size(356, 157);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

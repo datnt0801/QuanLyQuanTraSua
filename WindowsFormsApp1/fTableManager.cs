@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
 
             LoadTable();
             LoadCategory();
+            LoadComboBoxTable(comboBoxSwitchTable);
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,6 +109,13 @@ namespace WindowsFormsApp1
 
            
         }
+
+        void LoadComboBoxTable(ComboBox cb)
+        {
+            cb.DataSource = TableDAO.Instance.LoadTableList();
+            cb.DisplayMember = "Name";
+        }
+
         #endregion Method
 
 
@@ -195,9 +203,24 @@ namespace WindowsFormsApp1
 
         }
 
+        private void buttonSwitchTable_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn có thật sự muốn chuyển bàn " + (listView1.Tag as Table).Name + " qua " + (comboBoxSwitchTable.SelectedItem as Table).Name, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
 
+                int id1 = (listView1.Tag as Table).ID;
+
+                int id2 = (comboBoxSwitchTable.SelectedItem as Table).ID;
+
+                TableDAO.Instance.SwitchTable(id1, id2);
+
+                LoadTable();
+            }
+
+        }
 
         #endregion Events
+
 
     }
 }
